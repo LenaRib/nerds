@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 	<head>
 		<meta charset="utf-8">
 		<title>Дизайн-студия «Нёрдс»</title>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -20,6 +22,8 @@
 				</ul>
 				<ul class="basket-navigation">
 					<li class="basket-link">
+						<img src="img/cart-icon.svg" width="15" height="15"
+							alt="Корзина">
 						<a href="#">Корзина</a>
 					</li>
 				</ul>
@@ -28,16 +32,16 @@
 		</header>
 
 		<main class="container">
-			<h2 class="visually-hidden">Магазин готовых шаблонов</h2>
+			<h1 class="visually-hidden">Магазин готовых шаблонов</h2>
 
 		<section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- форма -->
+      <!-- форма для фильтра товаров по стоимости, сетке, особенностям-->
     </section>
 
     <section class="sort">
       <h2 class="visually-hidden">Сортировка товара</h2>
-      <!-- форма -->
+      <!-- форма для сортировки товаров по цене, по типу, по названию-->
     </section>
 
 		<section class="templates">
@@ -46,7 +50,7 @@
 				<li class="templates-item-current">
 					<a href="#">
 						<img src="img/img-sedona.jpg" width="360" height="576"
-						alt="Логотип Sedona">
+						alt="Sedona">
 					</a>
 					<div class="templates-hover">
 						<h3>Sedona</h3>
@@ -54,16 +58,14 @@
 							Информационный сайт
 							<br>для туристов</p>
 						<p>
-							<a href="#" class="button">
-								9 900 руб.
-							</a>
+							<a href="#" class="button">9 900 руб.</a>
 						</p>
 					</div>
 				</li>
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-pink.jpg" width="360" height="576"
-						alt="Логотип Pink">
+						alt="Pink">
 					</a>
 					<div class="templates-hover">
 						<h3>Pink app</h3>
@@ -71,16 +73,14 @@
 							Продуктовый лендинг
 							<br>приложения для iOS и Android</p>
 						<p>
-							<a href="#" class="button">
-								9 900 руб.
-							</a>
+							<a href="#" class="button">9 900 руб.</a>
 						</p>
 					</div>
 				</li>
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-barbershop.jpg" width="360" height="576"
-						alt="Логотип barbershop">
+						alt="Barbershop">
 					</a>
 					<div class="templates-hover">
 						<h3>Barbershop</h3>
@@ -88,16 +88,14 @@
 							Сайт салоны красоты.
 							<br>Для мужчин, да.</p>
 						<p>
-							<a href="#" class="button">
-								9 900 руб.
-							</a>
+							<a href="#" class="button">9 900 руб.</a>
 						</p>
 					</div>
 				</li>
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-mishka.jpg" width="360" height="576"
-						alt="Логотип mishka">
+						alt="Mishka">
 					</a>
 					<div class="templates-hover">
 						<h3>Mishka</h3>
@@ -114,7 +112,7 @@
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-aplus.jpg" width="360" height="576"
-						alt="Логотип A Plus">
+						alt="A Plus">
 					</a>
 					<div class="templates-hover">
 						<h3>A Plus</h3>
@@ -131,13 +129,13 @@
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-kvast.jpg" width="360" height="576"
-						alt="Логотип Кваст">
+						alt="Кваст">
 					</a>
 					<div class="templates-hover">
 						<h3>Кваст</h3>
 						<p>
 							Промо-сайт производителя
-							<br>рафтового кваса
+							<br>крафтового кваса
 						<p>
 							<a href="#" class="button">
 								9 900 руб.
@@ -146,15 +144,16 @@
 					</div>
 				</li>
 			</ul>
-		</selection>
+		</section>
 
 		<section>
+			<h2 class="visually-hidden">Навигация по страницам каталога</h2>
 			<ul class="pagination-list">
-				<li class="pagination-item">
-					<a href="#">1</a>
+				<li class="pagination-item-current">
+					<span>1</span>
 				</li>
 				<li class="pagination-item">
-					<a>2</a>
+					<a href="#">2</a>
 				</li>
 				<li class="pagination-item">
 					<a href="#">3</a>
@@ -162,21 +161,35 @@
 				<li class="pagination-item pagination-next">
 					<a href="#">Следующая</a>
 				</li>
-			</ul>	
+			</ul>
 		</section>
 		</main>
 
-		<foter class="main-footer">
+		<footer class="main-footer">
+
+			<section class="footer-contacts">
+				<img src="img/map.jpg" width="1440" height="416"
+				alt="Карта проезда до студии">
+				<h3>NЁRDS DESIGN STUDIO</h3>
+				<p class="contacts">191186, Санкт-Петербург,
+					<br>ул. Б. Конюшенная, д. 19/8
+					<br>тел. +7 (812) 275-75-75
+				</p>
+				<a class="button" href="#">Напишите нам</a>
+			</section>
+
 			<div class="footer-social">
 				<ul>
 					<li>
-						<a class="social-button" href="#">Вконтакте</a>
+						<a class="social-button" href="#">
+							<img src="img/vk-icon.svg" width="26" height="15" alt="ВКонтакте">
+						</a>
 					</li>
 					<li>
-						<a class="social-button" href="#">Фейсбук</a>
+						<img src="img/fb-icon.svg" width="26" height="15" alt="Фейсбук">
 					</li>
 					<li>
-						<a class="social-button" href="#">Инстаграм</a>
+						<img src="img/inst-icon.svg" width="26" height="15" alt="Инстаграм">
 					</li>
 				</ul>
 				<p>
@@ -186,7 +199,7 @@
 			</div>
 		</footer>
 
-		<section class="modal">
+		<section class="write-us-form">
 			<h2>Напишите нам</h2>
 			<!-- форма -->
 		</section>
