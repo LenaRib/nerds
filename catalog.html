@@ -35,13 +35,36 @@
 			<h1 class="visually-hidden">Магазин готовых шаблонов</h2>
 
 		<section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <h2 class="visually-hidden">Фильтры шаблонов по стоимости, сетке и особенностям</h2>
       <!-- форма для фильтра товаров по стоимости, сетке, особенностям-->
+			<p class="filters-cost">Стоимость:</p>
+			<form class="filters-cost-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="form-cost-lower">От:</label>
+					<input type="text" name="cost-lower" value="" placeholder="0" id="form-cost-lower">
+				</p>
+				до
+			</form>
+
+			<p>Сетка:</p>
+			<form class="filter-cost" action="https://echo.htmlacademy.ru" method="post">
+				от
+				до
+			</form>
     </section>
 
     <section class="sort">
       <h2 class="visually-hidden">Сортировка товара</h2>
-      <!-- форма для сортировки товаров по цене, по типу, по названию-->
+      <!-- НЕ форма для сортировки товаров по цене, по типу, по названию-->
+			<p>Сортировать:</p>
+			<ul class="">
+				<li><button class="button" type="button">По цене</button></li>
+				<li><button>По типу</button></li>
+				<li><button>По названию</button></li>
+			</ul>
+			<ul>
+				<li></li>
+			</ul>
     </section>
 
 		<section class="templates">
@@ -50,7 +73,7 @@
 				<li class="templates-item-current">
 					<a href="#">
 						<img src="img/img-sedona.jpg" width="360" height="576"
-						alt="Sedona">
+						alt="Шаблон сайта Sedona">
 					</a>
 					<div class="templates-hover">
 						<h3>Sedona</h3>
@@ -65,7 +88,7 @@
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-pink.jpg" width="360" height="576"
-						alt="Pink">
+						alt="Шаблон сайта Pink">
 					</a>
 					<div class="templates-hover">
 						<h3>Pink app</h3>
@@ -80,7 +103,7 @@
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-barbershop.jpg" width="360" height="576"
-						alt="Barbershop">
+						alt=" Шаблон сайта Barbershop">
 					</a>
 					<div class="templates-hover">
 						<h3>Barbershop</h3>
@@ -95,7 +118,7 @@
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-mishka.jpg" width="360" height="576"
-						alt="Mishka">
+						alt=" Шаблон сайта Mishka">
 					</a>
 					<div class="templates-hover">
 						<h3>Mishka</h3>
@@ -112,7 +135,7 @@
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-aplus.jpg" width="360" height="576"
-						alt="A Plus">
+						alt="Шаблон сайта A Plus">
 					</a>
 					<div class="templates-hover">
 						<h3>A Plus</h3>
@@ -129,7 +152,7 @@
 				<li class="templates-item">
 					<a href="#">
 						<img src="img/img-kvast.jpg" width="360" height="576"
-						alt="Кваст">
+						alt="Шаблон сайта Кваст">
 					</a>
 					<div class="templates-hover">
 						<h3>Кваст</h3>
@@ -186,10 +209,14 @@
 						</a>
 					</li>
 					<li>
-						<img src="img/fb-icon.svg" width="26" height="15" alt="Фейсбук">
+						<a class="social-button" href="#">
+							<img src="img/fb-icon.svg" width="26" height="15" alt="Фейсбук">
+						</a>
 					</li>
 					<li>
-						<img src="img/inst-icon.svg" width="26" height="15" alt="Инстаграм">
+						<a class="social-button" href="#">
+							<img src="img/inst-icon.svg" width="26" height="15" alt="Инстаграм">
+						</a>
 					</li>
 				</ul>
 				<p>
