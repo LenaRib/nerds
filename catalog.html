@@ -37,19 +37,25 @@
 		<section class="filters">
       <h2 class="visually-hidden">Фильтры шаблонов по стоимости, сетке и особенностям</h2>
       <!-- форма для фильтра товаров по стоимости, сетке, особенностям-->
-			<p class="filters-cost">Стоимость:</p>
+
 			<form class="filters-cost-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="form-cost">Стоимость:</p>
 				<p>
 					<label for="form-cost-lower">От:</label>
 					<input type="text" name="cost-lower" value="" placeholder="0" id="form-cost-lower">
+
+					<label for="form-cost-top">До::</label>
+					<input type="text" name="cost-top" value="15 000" placeholder="0" id="form-cost-top">
 				</p>
-				до
 			</form>
 
-			<p>Сетка:</p>
-			<form class="filter-cost" action="https://echo.htmlacademy.ru" method="post">
-				от
-				до
+			<form class="filter-layout" action="https://echo.htmlacademy.ru" method="post">
+					<p>Сетка:</p>
+					<select class="form-layout" name="layout">
+						<option value="adaptive">Адаптивная</option>
+						<option value="fixed">Фиксированная</option>
+						<option value="stretches">Резиновая</option>
+					</select>
 			</form>
     </section>
 
@@ -57,13 +63,14 @@
       <h2 class="visually-hidden">Сортировка товара</h2>
       <!-- НЕ форма для сортировки товаров по цене, по типу, по названию-->
 			<p>Сортировать:</p>
-			<ul class="">
-				<li><button class="button" type="button">По цене</button></li>
-				<li><button>По типу</button></li>
-				<li><button>По названию</button></li>
+			<ul class="sort-list">
+				<li><a href="catalog.html" class="sort-cost">По цене</a></li>
+				<li><a href="catalog.html" class="sort-type">По типу</a></li>
+				<li><a href="catalog.html" class="sort-name">По названию</a></li>
 			</ul>
-			<ul>
-				<li></li>
+			<ul class="sort-route">
+				<li><a href="catalog.html" class="sort-decreasing">От большего к меньшему</a> </li>
+				<li><a href="catalog.html" class="sort-decreasing">От большего к меньшему</a> </li>
 			</ul>
     </section>
 
@@ -136,18 +143,17 @@
 					<a href="#">
 						<img src="img/img-aplus.jpg" width="360" height="576"
 						alt="Шаблон сайта A Plus">
-					</a>
+
 					<div class="templates-hover">
 						<h3>A Plus</h3>
 						<p>
 							Лендинг курсов
 							<br>повышения квалификации
 						<p>
-							<a href="#" class="button">
 								9 900 руб.
-							</a>
 						</p>
 					</div>
+				</a>
 				</li>
 				<li class="templates-item">
 					<a href="#">
